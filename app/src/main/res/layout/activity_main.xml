@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="13dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000"
+          android:textSize="18dp"
+          android:paddingTop="5dp"
+          android:paddingLeft="5dp"
+          android:paddingBottom="2dp"
+          android:textStyle="bold"
+          android:layout_centerInParent="true"
+          android:text="Popular Movie"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000"
+          android:textSize="14dp"
+          android:paddingLeft="5dp"
+          android:layout_centerInParent="true"
+          android:text="Most Popular Movies"
+          />
+  </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movies_list"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="Up Comming Movie"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Stay updated with the latest movies"
+                />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcoming_list"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="Top Rated Movie"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Highest rated movies of all time"
+                />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topRated_list"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

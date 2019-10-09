@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@android:color/white"
+    style="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/detail_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/bg"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+        android:tint="#3A3A3A"
+        android:id="@+id/backButton"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="80dp"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        android:textStyle="bold"
+        android:textColor="#272727"
+        android:textSize="20dp"
+        android:layout_weight="8"
+        android:id="@+id/movie_detail_name"
+        />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_border_black_24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.4"
+            android:textStyle="bold"
+            android:textColor="#272727"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/movie_detail_rate"
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="141dp">
+
+            <TextView
+                android:id="@+id/movie_detail_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autoSizeTextType="uniform"
+                android:text="The true story of Forrest Tucker, from his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public. Wrapped up in the pursuit are a detective, who becomes captivated with Forrest’s commitment to his craft, and a woman, who loves him in spite of his chosen profession.The true story of Forrest Tucker, from his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public. Wrapped up in the pursuit are a detective, who becomes captivated with Forrest’s commitment to his craft, and a woman, who loves him in spite of his chosen The true story of Forrest Tucker, from his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public. Wrapped up in the pursuit are a detective, who becomes captivated with Forrest’s commitment to his craft, and a woman, who loves him in spite of his chosen
+The true story of Forrest Tucker, from his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public. Wrapped up in the pursuit are a detective, who becomes captivated with Forrest’s commitment to his craft, and a woman, who loves him in spite of his chosen
+The true story of Forrest Tucker, from his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public. Wrapped up in the pursuit are a detective, who becomes captivated with Forrest’s commitment to his craft, and a woman, who loves him in spite of his chosen "
+                android:textColor="#3F3E3E"
+                android:textSize="15sp"
+                android:scrollbars="vertical"/>
+
+        </ScrollView>
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="3">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="Similar"
+             android:textColor="#636262"
+             android:layout_weight="1"
+             android:textSize="17sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:id="@+id/SimilarLabel"
+             android:layout_margin="10dp"
+             android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:textColor="#636262"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/reviewsLabel"
+                android:layout_margin="10dp"
+                android:gravity="center"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="Trailer"
+             android:textColor="#636262"
+             android:layout_weight="1"
+             android:textSize="17sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:id="@+id/trailerLabel"
+             android:layout_margin="10dp"
+             android:gravity="center"/>
+       <!--  <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="Image"
+             android:textColor="#636262"
+             android:layout_weight="1"
+             android:textSize="17sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:id="@+id/imageLabel"
+             android:layout_margin="10dp"
+             android:gravity="center"/>-->
+
+
+     </LinearLayout>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieTrailer"
+           android:layout_margin="8dp"
+            android:orientation="horizontal"
+
+            />
+    </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/verticalScrollView"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/movieReviews"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/similar_view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:weightSum="18">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_horizontal"
+                android:tint="#636262"
+                android:layout_weight="0.5"
+                android:id="@+id/horiView"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_grid"
+                android:tint="#636262"
+                android:layout_weight="0.5"
+                android:id="@+id/gridView"/>
+        </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/similar_list"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
